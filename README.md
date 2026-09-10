@@ -98,14 +98,14 @@ append-only batch-genealogy ledger → the same contract on `DatomicStore`.
 
 | File | Actor / role |
 |---|---|
-| `src/sng/store.cljc` | SSoT — facilities · batches · feedstock CIDs · storage · leak-survey; `MemStore` ‖ `DatomicStore` (langchain.db `:db-api`); append-only ledger |
-| `src/sng/synthllm.cljc` | **synth-LLM** — the contained intelligence node (synthesis advisor); mock ‖ real LLM via `langchain.model` |
-| `src/sng/governor.cljc` | **CarbonGovernor** — independent carbon invariants; HOLD on commercial-CO₂, proprietary catalyst, cap exceeded, leak, storage, high-temp-without-council, no-actuation |
-| `src/sng/phase.cljc` | R0→R3 staged rollout (path-reserved → supervised); pathway/select is never auto |
-| `src/sng/synthesis.cljc` | **SynthesisActor** — the langgraph-clj StateGraph (1 run = 1 op) |
-| `src/sng/sim.cljc` | demo driver |
-| `test/sng/governor_contract_test.clj` | the carbon invariant, executable |
-| `test/sng/store_contract_test.clj` | `MemStore ≡ DatomicStore` |
+| `src/sng/store.kotoba` | SSoT — facilities · batches · feedstock CIDs · storage · leak-survey; `MemStore` ‖ `DatomicStore` (langchain.db `:db-api`); append-only ledger |
+| `src/sng/synthllm.kotoba` | **synth-LLM** — the contained intelligence node (synthesis advisor); mock ‖ real LLM via `langchain.model` |
+| `src/sng/governor.kotoba` | **CarbonGovernor** — independent carbon invariants; HOLD on commercial-CO₂, proprietary catalyst, cap exceeded, leak, storage, high-temp-without-council, no-actuation |
+| `src/sng/phase.kotoba` | R0→R3 staged rollout (path-reserved → supervised); pathway/select is never auto |
+| `src/sng/synthesis.kotoba` | **SynthesisActor** — the langgraph-clj StateGraph (1 run = 1 op) |
+| `src/sng/sim.kotoba` | demo driver |
+| `test/sng/governor_contract_test.kotoba` | the carbon invariant, executable |
+| `test/sng/store_contract_test.kotoba` | `MemStore ≡ DatomicStore` |
 
 ## Status
 
