@@ -13,9 +13,9 @@
   ;; io.github.com-junkawasaki/langchain-clj. langgraph declares the same
   ;; library as io.github.kotoba-lang/langchain, so the entry matched no
   ;; node in the resolved tree and never reached the classpath -- verified
-  ;; with `clojure -Stree`/-Spath, unchanged before and after removal.
+  ;; with `kbb -Stree`/-Spath, unchanged before and after removal.
   :dev {}
-  ;; clojure -M:dev:run → drive e-methane batch attestation through one actor
+  ;; kbb -M:dev:run → drive e-methane batch attestation through one actor
   :run {:main-opts ["-m" "sng.sim"]}
   :test {:extra-paths ["test"]
          :extra-deps {io.github.cognitect-labs/test-runner

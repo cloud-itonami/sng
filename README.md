@@ -82,9 +82,9 @@ catalyst lot is an EAVT ground datom, not a code change.
 ## Run
 
 ```bash
-clojure -M:dev:run     # drive batches through one SynthesisActor
-clojure -M:dev:test    # the carbon contract as executable tests
-clojure -M:lint        # clj-kondo (errors fail)
+kbb -M:dev:run     # drive batches through one SynthesisActor
+kbb -M:dev:test    # the carbon contract as executable tests
+kbb -M:lint        # clj-kondo (errors fail)
 ```
 
 Demo walks: ingest a new facility+batch → `bt-jp` clean Sabatier (governor

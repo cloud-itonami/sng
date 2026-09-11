@@ -11,7 +11,7 @@
                     → founder seat approves → pathway assessment recorded
     phase 0         batch/attest in path-reserved phase → held (phase-disabled)
 
-  Run: clojure -M:dev:run"
+  Run: kbb -M:dev:run"
   (:require [langgraph.graph :as g]
             [sng.store :as store]
             [sng.synthesis :as syn]))
